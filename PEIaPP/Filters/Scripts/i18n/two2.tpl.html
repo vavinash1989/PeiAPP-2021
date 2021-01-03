@@ -1,0 +1,17 @@
+<div id="viewTwo">
+			
+        <h1>Historic Building Rehabilitation</h1>
+      <div id="tabs" ng-controller="TabsCtrl">
+             <img ng-repeat="ltab in ltabs" 
+                ng-class="{active:lisActiveTab(ltab.url)}" 
+                ng-click="lonClickTab(ltab)"  ng-src={{ltab.img}}  style="width:100px;height:100px"/>
+        <div id="mainView">
+            <div ng-include="lcurrentTab"></div>
+        </div>
+    </div>
+    <h1>Historic Building Rehabilitation</h1>
+      
+
+
+
+		</div>

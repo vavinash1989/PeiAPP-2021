@@ -1,0 +1,1634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PEIModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PEIModelStoreContainer">
+    <EntitySet Name="Alabama_AMatrix" EntityType="PEIModel.Store.Alabama_AMatrix" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_Area" EntityType="PEIModel.Store.Alabama_Area" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_DefaultData" EntityType="PEIModel.Store.Alabama_DefaultData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_GridAlabama_RegionData" EntityType="PEIModel.Store.Alabama_GridAlabama_RegionData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_GridRegionValues" EntityType="PEIModel.Store.Alabama_GridRegionValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_LeontievInverse" EntityType="PEIModel.Store.Alabama_LeontievInverse" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_RegionData" EntityType="PEIModel.Store.Alabama_RegionData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alabama_Regions" EntityType="PEIModel.Store.Alabama_Regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlabamaRest_Area" EntityType="PEIModel.Store.AlabamaRest_Area" store:Type="Tables" store:Schema="dbo" store:Name="AlabamaRest_Area">
+      <DefiningQuery>SELECT 
+      [AlabamaRest_Area].[Value] AS [Value], 
+      [AlabamaRest_Area].[Population] AS [Population], 
+      [AlabamaRest_Area].[StateFipsCode] AS [StateFipsCode], 
+      [AlabamaRest_Area].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[AlabamaRest_Area] AS [AlabamaRest_Area]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AlabamaRest_DefaultData" EntityType="PEIModel.Store.AlabamaRest_DefaultData" store:Type="Tables" store:Schema="dbo" store:Name="AlabamaRest_DefaultData">
+      <DefiningQuery>SELECT 
+      [AlabamaRest_DefaultData].[RIO] AS [RIO], 
+      [AlabamaRest_DefaultData].[RIO_KEY] AS [RIO_KEY], 
+      [AlabamaRest_DefaultData].[RIO_DESC] AS [RIO_DESC], 
+      [AlabamaRest_DefaultData].[REGION_ID] AS [REGION_ID], 
+      [AlabamaRest_DefaultData].[Inc] AS [Inc], 
+      [AlabamaRest_DefaultData].[Emp] AS [Emp], 
+      [AlabamaRest_DefaultData].[GDP] AS [GDP], 
+      [AlabamaRest_DefaultData].[Wages] AS [Wages], 
+      [AlabamaRest_DefaultData].[P] AS [P], 
+      [AlabamaRest_DefaultData].[FederalGen] AS [FederalGen], 
+      [AlabamaRest_DefaultData].[FederalIns] AS [FederalIns], 
+      [AlabamaRest_DefaultData].[State] AS [State], 
+      [AlabamaRest_DefaultData].[Local] AS [Local], 
+      [AlabamaRest_DefaultData].[Supply] AS [Supply], 
+      [AlabamaRest_DefaultData].[Demand] AS [Demand], 
+      [AlabamaRest_DefaultData].[IncomeTotal] AS [IncomeTotal], 
+      [AlabamaRest_DefaultData].[EmploymentTotal] AS [EmploymentTotal], 
+      [AlabamaRest_DefaultData].[GDPTotal] AS [GDPTotal], 
+      [AlabamaRest_DefaultData].[LocalTotal] AS [LocalTotal], 
+      [AlabamaRest_DefaultData].[StateTotal] AS [StateTotal], 
+      [AlabamaRest_DefaultData].[FederalGenTotal] AS [FederalGenTotal], 
+      [AlabamaRest_DefaultData].[Locked] AS [Locked], 
+      [AlabamaRest_DefaultData].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[AlabamaRest_DefaultData] AS [AlabamaRest_DefaultData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AlabamaRest_GridRegionValues" EntityType="PEIModel.Store.AlabamaRest_GridRegionValues" store:Type="Tables" store:Schema="dbo" store:Name="AlabamaRest_GridRegionValues">
+      <DefiningQuery>SELECT 
+      [AlabamaRest_GridRegionValues].[RIO] AS [RIO], 
+      [AlabamaRest_GridRegionValues].[RIO_DESC] AS [RIO_DESC], 
+      [AlabamaRest_GridRegionValues].[Inc] AS [Inc], 
+      [AlabamaRest_GridRegionValues].[Emp] AS [Emp], 
+      [AlabamaRest_GridRegionValues].[GDP] AS [GDP], 
+      [AlabamaRest_GridRegionValues].[FederalGen] AS [FederalGen], 
+      [AlabamaRest_GridRegionValues].[State] AS [State], 
+      [AlabamaRest_GridRegionValues].[Local] AS [Local], 
+      [AlabamaRest_GridRegionValues].[P] AS [P], 
+      [AlabamaRest_GridRegionValues].[Locked] AS [Locked], 
+      [AlabamaRest_GridRegionValues].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[AlabamaRest_GridRegionValues] AS [AlabamaRest_GridRegionValues]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AlabamaRest_LeontievInverse" EntityType="PEIModel.Store.AlabamaRest_LeontievInverse" store:Type="Tables" store:Schema="dbo" store:Name="AlabamaRest_LeontievInverse">
+      <DefiningQuery>SELECT 
+      [AlabamaRest_LeontievInverse].[ID] AS [ID], 
+      [AlabamaRest_LeontievInverse].[VALUE] AS [VALUE], 
+      [AlabamaRest_LeontievInverse].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[AlabamaRest_LeontievInverse] AS [AlabamaRest_LeontievInverse]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AlabamaRest_RegionData" EntityType="PEIModel.Store.AlabamaRest_RegionData" store:Type="Tables" store:Schema="dbo" store:Name="AlabamaRest_RegionData">
+      <DefiningQuery>SELECT 
+      [AlabamaRest_RegionData].[RIO] AS [RIO], 
+      [AlabamaRest_RegionData].[RIO_KEY] AS [RIO_KEY], 
+      [AlabamaRest_RegionData].[RIO_DESC] AS [RIO_DESC], 
+      [AlabamaRest_RegionData].[REGION_ID] AS [REGION_ID], 
+      [AlabamaRest_RegionData].[Inc] AS [Inc], 
+      [AlabamaRest_RegionData].[Emp] AS [Emp], 
+      [AlabamaRest_RegionData].[GDP] AS [GDP], 
+      [AlabamaRest_RegionData].[Wages] AS [Wages], 
+      [AlabamaRest_RegionData].[P] AS [P], 
+      [AlabamaRest_RegionData].[FederalGen] AS [FederalGen], 
+      [AlabamaRest_RegionData].[FederalIns] AS [FederalIns], 
+      [AlabamaRest_RegionData].[State] AS [State], 
+      [AlabamaRest_RegionData].[Local] AS [Local], 
+      [AlabamaRest_RegionData].[Supply] AS [Supply], 
+      [AlabamaRest_RegionData].[Demand] AS [Demand], 
+      [AlabamaRest_RegionData].[IncomeTotal] AS [IncomeTotal], 
+      [AlabamaRest_RegionData].[EmploymentTotal] AS [EmploymentTotal], 
+      [AlabamaRest_RegionData].[GDPTotal] AS [GDPTotal], 
+      [AlabamaRest_RegionData].[LocalTotal] AS [LocalTotal], 
+      [AlabamaRest_RegionData].[StateTotal] AS [StateTotal], 
+      [AlabamaRest_RegionData].[FederalGenTotal] AS [FederalGenTotal], 
+      [AlabamaRest_RegionData].[Locked] AS [Locked], 
+      [AlabamaRest_RegionData].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[AlabamaRest_RegionData] AS [AlabamaRest_RegionData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Camping" EntityType="PEIModel.Store.Camping" store:Type="Tables" store:Schema="dbo" store:Name="Camping">
+      <DefiningQuery>SELECT 
+      [Camping].[PC_KEY] AS [PC_KEY], 
+      [Camping].[VALUE] AS [VALUE], 
+      [Camping].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Camping] AS [Camping]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Day Trip" EntityType="PEIModel.Store.Day Trip" store:Type="Tables" store:Schema="dbo" store:Name="Day Trip">
+      <DefiningQuery>SELECT 
+      [Day Trip].[PC_KEY] AS [PC_KEY], 
+      [Day Trip].[VALUE] AS [VALUE], 
+      [Day Trip].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Day Trip] AS [Day Trip]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DefaultData" EntityType="PEIModel.Store.DefaultData" store:Type="Tables" store:Schema="dbo" store:Name="DefaultData">
+      <DefiningQuery>SELECT 
+      [DefaultData].[RIO] AS [RIO], 
+      [DefaultData].[RIO_KEY] AS [RIO_KEY], 
+      [DefaultData].[REGION_ID] AS [REGION_ID], 
+      [DefaultData].[Inc] AS [Inc], 
+      [DefaultData].[Emp] AS [Emp], 
+      [DefaultData].[GDP] AS [GDP], 
+      [DefaultData].[Wages] AS [Wages], 
+      [DefaultData].[P] AS [P], 
+      [DefaultData].[FederalGen] AS [FederalGen], 
+      [DefaultData].[FederalIns] AS [FederalIns], 
+      [DefaultData].[State] AS [State], 
+      [DefaultData].[Local] AS [Local], 
+      [DefaultData].[Supply] AS [Supply], 
+      [DefaultData].[Demand] AS [Demand], 
+      [DefaultData].[IncomeTotal] AS [IncomeTotal], 
+      [DefaultData].[EmploymentTotal] AS [EmploymentTotal], 
+      [DefaultData].[GDPTotal] AS [GDPTotal], 
+      [DefaultData].[LocalTotal] AS [LocalTotal], 
+      [DefaultData].[StateTotal] AS [StateTotal], 
+      [DefaultData].[FederalGenTotal] AS [FederalGenTotal], 
+      [DefaultData].[Locked] AS [Locked]
+      FROM [dbo].[DefaultData] AS [DefaultData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Distribution" EntityType="PEIModel.Store.Distribution" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DistributionCheckTbl" EntityType="PEIModel.Store.DistributionCheckTbl" store:Type="Tables" store:Schema="dbo" store:Name="DistributionCheckTbl">
+      <DefiningQuery>SELECT 
+      [DistributionCheckTbl].[ID] AS [ID], 
+      [DistributionCheckTbl].[Expr1] AS [Expr1], 
+      [DistributionCheckTbl].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[DistributionCheckTbl] AS [DistributionCheckTbl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Friends and Family" EntityType="PEIModel.Store.Friends and Family" store:Type="Tables" store:Schema="dbo" store:Name="Friends and Family">
+      <DefiningQuery>SELECT 
+      [Friends and Family].[PC_KEY] AS [PC_KEY], 
+      [Friends and Family].[VALUE] AS [VALUE], 
+      [Friends and Family].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Friends and Family] AS [Friends and Family]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FTE" EntityType="PEIModel.Store.FTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GeneralInfo" EntityType="PEIModel.Store.GeneralInfo" store:Type="Tables" store:Schema="dbo" store:Name="GeneralInfo">
+      <DefiningQuery>SELECT 
+      [GeneralInfo].[DollarsPerFTE] AS [DollarsPerFTE], 
+      [GeneralInfo].[DollarsPerPD] AS [DollarsPerPD], 
+      [GeneralInfo].[DollarsPerCN] AS [DollarsPerCN], 
+      [GeneralInfo].[DollarsPerLN] AS [DollarsPerLN], 
+      [GeneralInfo].[DollarsPerFN] AS [DollarsPerFN], 
+      [GeneralInfo].[PercentCamping] AS [PercentCamping], 
+      [GeneralInfo].[PercentLodging] AS [PercentLodging], 
+      [GeneralInfo].[PercentFriends] AS [PercentFriends], 
+      [GeneralInfo].[0] AS [0], 
+      [GeneralInfo].[1] AS [1], 
+      [GeneralInfo].[2] AS [2], 
+      [GeneralInfo].[3] AS [3], 
+      [GeneralInfo].[4] AS [4], 
+      [GeneralInfo].[5] AS [5], 
+      [GeneralInfo].[6] AS [6], 
+      [GeneralInfo].[7] AS [7], 
+      [GeneralInfo].[8] AS [8], 
+      [GeneralInfo].[9] AS [9], 
+      [GeneralInfo].[10] AS [10], 
+      [GeneralInfo].[11] AS [11], 
+      [GeneralInfo].[12] AS [12], 
+      [GeneralInfo].[13] AS [13], 
+      [GeneralInfo].[14] AS [14], 
+      [GeneralInfo].[15] AS [15], 
+      [GeneralInfo].[16] AS [16], 
+      [GeneralInfo].[17] AS [17], 
+      [GeneralInfo].[visitors] AS [visitors], 
+      [GeneralInfo].[capital] AS [capital], 
+      [GeneralInfo].[rest] AS [rest], 
+      [GeneralInfo].[RCRatio] AS [RCRatio], 
+      [GeneralInfo].[RVRatio] AS [RVRatio], 
+      [GeneralInfo].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[GeneralInfo] AS [GeneralInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="History" EntityType="PEIModel.Store.History" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="I/O Codes Old" EntityType="PEIModel.Store.I/O Codes Old" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="iocodes_new" EntityType="PEIModel.Store.iocodes_new" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JointVentures" EntityType="PEIModel.Store.JointVentures" store:Type="Tables" store:Schema="dbo" store:Name="JointVentures">
+      <DefiningQuery>SELECT 
+      [JointVentures].[ID] AS [ID], 
+      [JointVentures].[IO_KEY] AS [IO_KEY], 
+      [JointVentures].[VALUE] AS [VALUE], 
+      [JointVentures].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[JointVentures] AS [JointVentures]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Lodging" EntityType="PEIModel.Store.Lodging" store:Type="Tables" store:Schema="dbo" store:Name="Lodging">
+      <DefiningQuery>SELECT 
+      [Lodging].[PC_KEY] AS [PC_KEY], 
+      [Lodging].[VALUE] AS [VALUE], 
+      [Lodging].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Lodging] AS [Lodging]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MCapital" EntityType="PEIModel.Store.MCapital" store:Type="Tables" store:Schema="dbo" store:Name="MCapital">
+      <DefiningQuery>SELECT 
+      [MCapital].[PC_KEY] AS [PC_KEY], 
+      [MCapital].[VALUE] AS [VALUE], 
+      [MCapital].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[MCapital] AS [MCapital]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MTheRest" EntityType="PEIModel.Store.MTheRest" store:Type="Tables" store:Schema="dbo" store:Name="MTheRest">
+      <DefiningQuery>SELECT 
+      [MTheRest].[PC_KEY] AS [PC_KEY], 
+      [MTheRest].[VALUE] AS [VALUE], 
+      [MTheRest].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[MTheRest] AS [MTheRest]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MTourism" EntityType="PEIModel.Store.MTourism" store:Type="Tables" store:Schema="dbo" store:Name="MTourism">
+      <DefiningQuery>SELECT 
+      [MTourism].[PC_KEY] AS [PC_KEY], 
+      [MTourism].[VALUE] AS [VALUE], 
+      [MTourism].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[MTourism] AS [MTourism]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Nation_Area" EntityType="PEIModel.Store.Nation_Area" store:Type="Tables" store:Schema="dbo" store:Name="Nation_Area">
+      <DefiningQuery>SELECT 
+      [Nation_Area].[Value] AS [Value], 
+      [Nation_Area].[Population] AS [Population], 
+      [Nation_Area].[StateFipsCode] AS [StateFipsCode], 
+      [Nation_Area].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Nation_Area] AS [Nation_Area]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="New Stores and Restaurants" EntityType="PEIModel.Store.New Stores and Restaurants" store:Type="Tables" store:Schema="dbo" store:Name="New Stores and Restaurants">
+      <DefiningQuery>SELECT 
+      [New Stores and Restaurants].[PC_KEY] AS [PC_KEY], 
+      [New Stores and Restaurants].[VALUE] AS [VALUE], 
+      [New Stores and Restaurants].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[New Stores and Restaurants] AS [New Stores and Restaurants]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OccupationDistribution" EntityType="PEIModel.Store.OccupationDistribution" store:Type="Tables" store:Schema="dbo" store:Name="OccupationDistribution">
+      <DefiningQuery>SELECT 
+      [OccupationDistribution].[OccupationID] AS [OccupationID], 
+      [OccupationDistribution].[RIO] AS [RIO], 
+      [OccupationDistribution].[IndustryID] AS [IndustryID], 
+      [OccupationDistribution].[OccupationIndex] AS [OccupationIndex], 
+      [OccupationDistribution].[Percent] AS [Percent], 
+      [OccupationDistribution].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[OccupationDistribution] AS [OccupationDistribution]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="P(nation)" EntityType="PEIModel.Store.P(nation)" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RegionalData" EntityType="PEIModel.Store.RegionalData" store:Type="Tables" store:Schema="dbo" store:Name="RegionalData">
+      <DefiningQuery>SELECT 
+      [RegionalData].[FipsCode] AS [FipsCode], 
+      [RegionalData].[RIO] AS [RIO], 
+      [RegionalData].[Inc] AS [Inc], 
+      [RegionalData].[Emp] AS [Emp], 
+      [RegionalData].[GDP] AS [GDP], 
+      [RegionalData].[Wages] AS [Wages], 
+      [RegionalData].[StateLocal] AS [StateLocal], 
+      [RegionalData].[Federal] AS [Federal], 
+      [RegionalData].[Insurance] AS [Insurance], 
+      [RegionalData].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[RegionalData] AS [RegionalData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Regions" EntityType="PEIModel.Store.Regions" store:Type="Tables" store:Schema="dbo" store:Name="Regions">
+      <DefiningQuery>SELECT 
+      [Regions].[FipsCode] AS [FipsCode], 
+      [Regions].[State] AS [State], 
+      [Regions].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Regions] AS [Regions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Rehab" EntityType="PEIModel.Store.Rehab" store:Type="Tables" store:Schema="dbo" store:Name="Rehab">
+      <DefiningQuery>SELECT 
+      [Rehab].[ID] AS [ID], 
+      [Rehab].[RH_KEY] AS [RH_KEY], 
+      [Rehab].[PC_KEY] AS [PC_KEY], 
+      [Rehab].[VALUE] AS [VALUE], 
+      [Rehab].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[Rehab] AS [Rehab]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblBase" EntityType="PEIModel.Store.tblBase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblDirectEffects" EntityType="PEIModel.Store.tblDirectEffects" store:Type="Tables" store:Schema="dbo" store:Name="tblDirectEffects">
+      <DefiningQuery>SELECT 
+      [tblDirectEffects].[Industry] AS [Industry], 
+      [tblDirectEffects].[IndustryID] AS [IndustryID], 
+      [tblDirectEffects].[Section] AS [Section], 
+      [tblDirectEffects].[SectionID] AS [SectionID], 
+      [tblDirectEffects].[Employment] AS [Employment], 
+      [tblDirectEffects].[Income] AS [Income], 
+      [tblDirectEffects].[GrossStateProduct] AS [GrossStateProduct], 
+      [tblDirectEffects].[Output] AS [Output], 
+      [tblDirectEffects].[SIC] AS [SIC], 
+      [tblDirectEffects].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblDirectEffects] AS [tblDirectEffects]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblEconomicBase" EntityType="PEIModel.Store.tblEconomicBase" store:Type="Tables" store:Schema="dbo" store:Name="tblEconomicBase">
+      <DefiningQuery>SELECT 
+      [tblEconomicBase].[Employment1] AS [Employment1], 
+      [tblEconomicBase].[Employment2] AS [Employment2], 
+      [tblEconomicBase].[Employment3] AS [Employment3], 
+      [tblEconomicBase].[Employment4] AS [Employment4], 
+      [tblEconomicBase].[Employment5] AS [Employment5], 
+      [tblEconomicBase].[Employment6] AS [Employment6], 
+      [tblEconomicBase].[Employment7] AS [Employment7], 
+      [tblEconomicBase].[Employment8] AS [Employment8], 
+      [tblEconomicBase].[Employment9] AS [Employment9], 
+      [tblEconomicBase].[Employment10] AS [Employment10], 
+      [tblEconomicBase].[Employment11] AS [Employment11], 
+      [tblEconomicBase].[Income1] AS [Income1], 
+      [tblEconomicBase].[Income2] AS [Income2], 
+      [tblEconomicBase].[Income3] AS [Income3], 
+      [tblEconomicBase].[Income4] AS [Income4], 
+      [tblEconomicBase].[Income5] AS [Income5], 
+      [tblEconomicBase].[Income6] AS [Income6], 
+      [tblEconomicBase].[Income7] AS [Income7], 
+      [tblEconomicBase].[Income8] AS [Income8], 
+      [tblEconomicBase].[Income9] AS [Income9], 
+      [tblEconomicBase].[Income10] AS [Income10], 
+      [tblEconomicBase].[Income11] AS [Income11], 
+      [tblEconomicBase].[Gross1] AS [Gross1], 
+      [tblEconomicBase].[Gross2] AS [Gross2], 
+      [tblEconomicBase].[Gross3] AS [Gross3], 
+      [tblEconomicBase].[Gross4] AS [Gross4], 
+      [tblEconomicBase].[Gross5] AS [Gross5], 
+      [tblEconomicBase].[Gross6] AS [Gross6], 
+      [tblEconomicBase].[Gross7] AS [Gross7], 
+      [tblEconomicBase].[Gross8] AS [Gross8], 
+      [tblEconomicBase].[Gross9] AS [Gross9], 
+      [tblEconomicBase].[Gross10] AS [Gross10], 
+      [tblEconomicBase].[Gross11] AS [Gross11], 
+      [tblEconomicBase].[Output1] AS [Output1], 
+      [tblEconomicBase].[Output2] AS [Output2], 
+      [tblEconomicBase].[Output3] AS [Output3], 
+      [tblEconomicBase].[Output4] AS [Output4], 
+      [tblEconomicBase].[Output5] AS [Output5], 
+      [tblEconomicBase].[Output6] AS [Output6], 
+      [tblEconomicBase].[Output7] AS [Output7], 
+      [tblEconomicBase].[Output8] AS [Output8], 
+      [tblEconomicBase].[Output9] AS [Output9], 
+      [tblEconomicBase].[Output10] AS [Output10], 
+      [tblEconomicBase].[Output11] AS [Output11], 
+      [tblEconomicBase].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblEconomicBase] AS [tblEconomicBase]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblGeneralIndustry" EntityType="PEIModel.Store.tblGeneralIndustry" store:Type="Tables" store:Schema="dbo" store:Name="tblGeneralIndustry">
+      <DefiningQuery>SELECT 
+      [tblGeneralIndustry].[Employment1] AS [Employment1], 
+      [tblGeneralIndustry].[Employment2] AS [Employment2], 
+      [tblGeneralIndustry].[Employment3] AS [Employment3], 
+      [tblGeneralIndustry].[Employment4] AS [Employment4], 
+      [tblGeneralIndustry].[Employment5] AS [Employment5], 
+      [tblGeneralIndustry].[Employment6] AS [Employment6], 
+      [tblGeneralIndustry].[Employment7] AS [Employment7], 
+      [tblGeneralIndustry].[Employment8] AS [Employment8], 
+      [tblGeneralIndustry].[Employment9] AS [Employment9], 
+      [tblGeneralIndustry].[Employment10] AS [Employment10], 
+      [tblGeneralIndustry].[Employment11] AS [Employment11], 
+      [tblGeneralIndustry].[Employment12] AS [Employment12], 
+      [tblGeneralIndustry].[Employment13] AS [Employment13], 
+      [tblGeneralIndustry].[Employment14] AS [Employment14], 
+      [tblGeneralIndustry].[Income1] AS [Income1], 
+      [tblGeneralIndustry].[Income2] AS [Income2], 
+      [tblGeneralIndustry].[Income3] AS [Income3], 
+      [tblGeneralIndustry].[Income4] AS [Income4], 
+      [tblGeneralIndustry].[Income5] AS [Income5], 
+      [tblGeneralIndustry].[Income6] AS [Income6], 
+      [tblGeneralIndustry].[Income7] AS [Income7], 
+      [tblGeneralIndustry].[Income8] AS [Income8], 
+      [tblGeneralIndustry].[Income9] AS [Income9], 
+      [tblGeneralIndustry].[Income10] AS [Income10], 
+      [tblGeneralIndustry].[Income11] AS [Income11], 
+      [tblGeneralIndustry].[Income12] AS [Income12], 
+      [tblGeneralIndustry].[Income13] AS [Income13], 
+      [tblGeneralIndustry].[Income14] AS [Income14], 
+      [tblGeneralIndustry].[Gross1] AS [Gross1], 
+      [tblGeneralIndustry].[Gross2] AS [Gross2], 
+      [tblGeneralIndustry].[Gross3] AS [Gross3], 
+      [tblGeneralIndustry].[Gross4] AS [Gross4], 
+      [tblGeneralIndustry].[Gross5] AS [Gross5], 
+      [tblGeneralIndustry].[Gross6] AS [Gross6], 
+      [tblGeneralIndustry].[Gross7] AS [Gross7], 
+      [tblGeneralIndustry].[Gross8] AS [Gross8], 
+      [tblGeneralIndustry].[Gross9] AS [Gross9], 
+      [tblGeneralIndustry].[Gross10] AS [Gross10], 
+      [tblGeneralIndustry].[Gross11] AS [Gross11], 
+      [tblGeneralIndustry].[Gross12] AS [Gross12], 
+      [tblGeneralIndustry].[Gross13] AS [Gross13], 
+      [tblGeneralIndustry].[Gross14] AS [Gross14], 
+      [tblGeneralIndustry].[Gross15] AS [Gross15], 
+      [tblGeneralIndustry].[Gross16] AS [Gross16], 
+      [tblGeneralIndustry].[Gross17] AS [Gross17], 
+      [tblGeneralIndustry].[Gross18] AS [Gross18], 
+      [tblGeneralIndustry].[Gross19] AS [Gross19], 
+      [tblGeneralIndustry].[Gross20] AS [Gross20], 
+      [tblGeneralIndustry].[Gross21] AS [Gross21], 
+      [tblGeneralIndustry].[Gross22] AS [Gross22], 
+      [tblGeneralIndustry].[Gross23] AS [Gross23], 
+      [tblGeneralIndustry].[Gross24] AS [Gross24], 
+      [tblGeneralIndustry].[Gross25] AS [Gross25], 
+      [tblGeneralIndustry].[Output1] AS [Output1], 
+      [tblGeneralIndustry].[Output2] AS [Output2], 
+      [tblGeneralIndustry].[Output3] AS [Output3], 
+      [tblGeneralIndustry].[Output4] AS [Output4], 
+      [tblGeneralIndustry].[Output5] AS [Output5], 
+      [tblGeneralIndustry].[Output6] AS [Output6], 
+      [tblGeneralIndustry].[Output7] AS [Output7], 
+      [tblGeneralIndustry].[Output8] AS [Output8], 
+      [tblGeneralIndustry].[Output9] AS [Output9], 
+      [tblGeneralIndustry].[Output10] AS [Output10], 
+      [tblGeneralIndustry].[Output11] AS [Output11], 
+      [tblGeneralIndustry].[Output12] AS [Output12], 
+      [tblGeneralIndustry].[Output13] AS [Output13], 
+      [tblGeneralIndustry].[Output14] AS [Output14], 
+      [tblGeneralIndustry].[InitialEffect] AS [InitialEffect], 
+      [tblGeneralIndustry].[Gross26] AS [Gross26], 
+      [tblGeneralIndustry].[Gross27] AS [Gross27], 
+      [tblGeneralIndustry].[Gross28] AS [Gross28], 
+      [tblGeneralIndustry].[Gross29] AS [Gross29], 
+      [tblGeneralIndustry].[Gross30] AS [Gross30], 
+      [tblGeneralIndustry].[PersonalIncome] AS [PersonalIncome], 
+      [tblGeneralIndustry].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblGeneralIndustry] AS [tblGeneralIndustry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblIndustry" EntityType="PEIModel.Store.tblIndustry" store:Type="Tables" store:Schema="dbo" store:Name="tblIndustry">
+      <DefiningQuery>SELECT 
+      [tblIndustry].[Industry] AS [Industry], 
+      [tblIndustry].[IndustryID] AS [IndustryID], 
+      [tblIndustry].[Section] AS [Section], 
+      [tblIndustry].[SectionID] AS [SectionID], 
+      [tblIndustry].[Employment] AS [Employment], 
+      [tblIndustry].[Income] AS [Income], 
+      [tblIndustry].[GrossStateProduct] AS [GrossStateProduct], 
+      [tblIndustry].[Output] AS [Output], 
+      [tblIndustry].[SIC] AS [SIC], 
+      [tblIndustry].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblIndustry] AS [tblIndustry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblOccupations" EntityType="PEIModel.Store.tblOccupations" store:Type="Tables" store:Schema="dbo" store:Name="tblOccupations">
+      <DefiningQuery>SELECT 
+      [tblOccupations].[OccupationIndex] AS [OccupationIndex], 
+      [tblOccupations].[OccupationID] AS [OccupationID], 
+      [tblOccupations].[GroupName] AS [GroupName], 
+      [tblOccupations].[GroupID] AS [GroupID], 
+      [tblOccupations].[SectionName] AS [SectionName], 
+      [tblOccupations].[SectionID] AS [SectionID], 
+      [tblOccupations].[DetailsName] AS [DetailsName], 
+      [tblOccupations].[DitailsID] AS [DitailsID], 
+      [tblOccupations].[Value] AS [Value], 
+      [tblOccupations].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblOccupations] AS [tblOccupations]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblShares" EntityType="PEIModel.Store.tblShares" store:Type="Tables" store:Schema="dbo" store:Name="tblShares">
+      <DefiningQuery>SELECT 
+      [tblShares].[Employment1] AS [Employment1], 
+      [tblShares].[Employment2] AS [Employment2], 
+      [tblShares].[Employment3] AS [Employment3], 
+      [tblShares].[Employment4] AS [Employment4], 
+      [tblShares].[Employment5] AS [Employment5], 
+      [tblShares].[Employment6] AS [Employment6], 
+      [tblShares].[Employment7] AS [Employment7], 
+      [tblShares].[Employment8] AS [Employment8], 
+      [tblShares].[Employment9] AS [Employment9], 
+      [tblShares].[Employment10] AS [Employment10], 
+      [tblShares].[Employment11] AS [Employment11], 
+      [tblShares].[Income1] AS [Income1], 
+      [tblShares].[Income2] AS [Income2], 
+      [tblShares].[Income3] AS [Income3], 
+      [tblShares].[Income4] AS [Income4], 
+      [tblShares].[Income5] AS [Income5], 
+      [tblShares].[Income6] AS [Income6], 
+      [tblShares].[Income7] AS [Income7], 
+      [tblShares].[Income8] AS [Income8], 
+      [tblShares].[Income9] AS [Income9], 
+      [tblShares].[Income10] AS [Income10], 
+      [tblShares].[Income11] AS [Income11], 
+      [tblShares].[Gross1] AS [Gross1], 
+      [tblShares].[Gross2] AS [Gross2], 
+      [tblShares].[Gross3] AS [Gross3], 
+      [tblShares].[Gross4] AS [Gross4], 
+      [tblShares].[Gross5] AS [Gross5], 
+      [tblShares].[Gross6] AS [Gross6], 
+      [tblShares].[Gross7] AS [Gross7], 
+      [tblShares].[Gross8] AS [Gross8], 
+      [tblShares].[Gross9] AS [Gross9], 
+      [tblShares].[Gross10] AS [Gross10], 
+      [tblShares].[Gross11] AS [Gross11], 
+      [tblShares].[Output1] AS [Output1], 
+      [tblShares].[Output2] AS [Output2], 
+      [tblShares].[Output3] AS [Output3], 
+      [tblShares].[Output4] AS [Output4], 
+      [tblShares].[Output5] AS [Output5], 
+      [tblShares].[Output6] AS [Output6], 
+      [tblShares].[Output7] AS [Output7], 
+      [tblShares].[Output8] AS [Output8], 
+      [tblShares].[Output9] AS [Output9], 
+      [tblShares].[Output10] AS [Output10], 
+      [tblShares].[Output11] AS [Output11], 
+      [tblShares].[PrivateOut] AS [PrivateOut], 
+      [tblShares].[TotOut] AS [TotOut], 
+      [tblShares].[PrivateEmp] AS [PrivateEmp], 
+      [tblShares].[PrivateGDP] AS [PrivateGDP], 
+      [tblShares].[PrivateInc] AS [PrivateInc], 
+      [tblShares].[TotEmp] AS [TotEmp], 
+      [tblShares].[TotInc] AS [TotInc], 
+      [tblShares].[TotGDP] AS [TotGDP], 
+      [tblShares].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[tblShares] AS [tblShares]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTemp" EntityType="PEIModel.Store.tblTemp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TempPC" EntityType="PEIModel.Store.TempPC" store:Type="Tables" store:Schema="dbo" store:Name="TempPC">
+      <DefiningQuery>SELECT 
+      [TempPC].[PC_KEY] AS [PC_KEY], 
+      [TempPC].[VALUE] AS [VALUE], 
+      [TempPC].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[TempPC] AS [TempPC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VectorAA" EntityType="PEIModel.Store.VectorAA" store:Type="Tables" store:Schema="dbo" store:Name="VectorAA">
+      <DefiningQuery>SELECT 
+      [VectorAA].[RIO] AS [RIO], 
+      [VectorAA].[VALUE] AS [VALUE], 
+      [VectorAA].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[VectorAA] AS [VectorAA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VectorAADistribution" EntityType="PEIModel.Store.VectorAADistribution" store:Type="Tables" store:Schema="dbo" store:Name="VectorAADistribution">
+      <DefiningQuery>SELECT 
+      [VectorAADistribution].[RIO] AS [RIO], 
+      [VectorAADistribution].[VALUE] AS [VALUE], 
+      [VectorAADistribution].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[VectorAADistribution] AS [VectorAADistribution]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="z_AlabamaRest_AMatrix" EntityType="PEIModel.Store.z_AlabamaRest_AMatrix" store:Type="Tables" store:Schema="dbo" store:Name="z_AlabamaRest_AMatrix">
+      <DefiningQuery>SELECT 
+      [z_AlabamaRest_AMatrix].[ID] AS [ID], 
+      [z_AlabamaRest_AMatrix].[VALUE] AS [VALUE], 
+      [z_AlabamaRest_AMatrix].[SSMA_TimeStamp] AS [SSMA_TimeStamp]
+      FROM [dbo].[z_AlabamaRest_AMatrix] AS [z_AlabamaRest_AMatrix]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ZNewIoCodes" EntityType="PEIModel.Store.ZNewIoCodes" store:Type="Tables" store:Schema="dbo" store:Name="ZNewIoCodes">
+      <DefiningQuery>SELECT 
+      [ZNewIoCodes].[ID] AS [ID], 
+      [ZNewIoCodes].[IO_KEY] AS [IO_KEY], 
+      [ZNewIoCodes].[IO_DESC] AS [IO_DESC], 
+      [ZNewIoCodes].[PC_KEY] AS [PC_KEY], 
+      [ZNewIoCodes].[PC_KEY_FOUND] AS [PC_KEY_FOUND], 
+      [ZNewIoCodes].[SIC] AS [SIC]
+      FROM [dbo].[ZNewIoCodes] AS [ZNewIoCodes]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="Alabama_AMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VALUE" Type="float" />
+  </EntityType>
+  <EntityType Name="Alabama_Area">
+    <Key>
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="Population" Type="float" />
+    <Property Name="StateFipsCode" Type="int" />
+  </EntityType>
+  <EntityType Name="Alabama_DefaultData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="int" Nullable="false" />
+    <Property Name="RIO_KEY" Type="nvarchar" MaxLength="50" />
+    <Property Name="RIO_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="REGION_ID" Type="int" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="FederalIns" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Alabama_GridAlabama_RegionData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="int" Nullable="false" />
+    <Property Name="RIO_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+  </EntityType>
+  <EntityType Name="Alabama_GridRegionValues">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="int" Nullable="false" />
+    <Property Name="RIO_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Alabama_LeontievInverse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="VALUE" Type="float" />
+  </EntityType>
+  <EntityType Name="Alabama_RegionData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="int" Nullable="false" />
+    <Property Name="RIO_KEY" Type="nvarchar" MaxLength="50" />
+    <Property Name="RIO_DESC" Type="nvarchar" MaxLength="255" />
+    <Property Name="REGION_ID" Type="int" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="FederalIns" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Alabama_Regions">
+    <Key>
+      <PropertyRef Name="REGION_ID" />
+    </Key>
+    <Property Name="REGION_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DataName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.AlabamaRest_Area' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AlabamaRest_Area">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Value" Type="float" />
+    <Property Name="Population" Type="float" />
+    <Property Name="StateFipsCode" Type="int" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.AlabamaRest_DefaultData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AlabamaRest_DefaultData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="int" />
+    <Property Name="RIO_KEY" Type="nvarchar" MaxLength="50" />
+    <Property Name="RIO_DESC" Type="varchar" MaxLength="255" />
+    <Property Name="REGION_ID" Type="int" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="FederalIns" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.AlabamaRest_GridRegionValues' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AlabamaRest_GridRegionValues">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="int" />
+    <Property Name="RIO_DESC" Type="varchar" MaxLength="255" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.AlabamaRest_LeontievInverse' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AlabamaRest_LeontievInverse">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.AlabamaRest_RegionData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AlabamaRest_RegionData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="int" />
+    <Property Name="RIO_KEY" Type="nvarchar" MaxLength="50" />
+    <Property Name="RIO_DESC" Type="varchar" MaxLength="255" />
+    <Property Name="REGION_ID" Type="int" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="FederalIns" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Camping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Camping">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Day Trip' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Day Trip">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.DefaultData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DefaultData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="int" Nullable="false" />
+    <Property Name="RIO_KEY" Type="int" />
+    <Property Name="REGION_ID" Type="int" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="P" Type="float" />
+    <Property Name="FederalGen" Type="float" />
+    <Property Name="FederalIns" Type="float" />
+    <Property Name="State" Type="float" />
+    <Property Name="Local" Type="float" />
+    <Property Name="Supply" Type="float" />
+    <Property Name="Demand" Type="float" />
+    <Property Name="IncomeTotal" Type="float" />
+    <Property Name="EmploymentTotal" Type="float" />
+    <Property Name="GDPTotal" Type="float" />
+    <Property Name="LocalTotal" Type="float" />
+    <Property Name="StateTotal" Type="float" />
+    <Property Name="FederalGenTotal" Type="float" />
+    <Property Name="Locked" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Distribution">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="float" Nullable="false" />
+    <Property Name="0" Type="float" />
+    <Property Name="1" Type="float" />
+    <Property Name="2" Type="float" />
+    <Property Name="3" Type="float" />
+    <Property Name="4" Type="float" />
+    <Property Name="5" Type="float" />
+    <Property Name="6" Type="float" />
+    <Property Name="7" Type="float" />
+    <Property Name="8" Type="float" />
+    <Property Name="9" Type="float" />
+    <Property Name="10" Type="float" />
+    <Property Name="11" Type="float" />
+    <Property Name="12" Type="float" />
+    <Property Name="13" Type="float" />
+    <Property Name="14" Type="float" />
+    <Property Name="15" Type="float" />
+    <Property Name="16" Type="float" />
+    <Property Name="17" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.DistributionCheckTbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="DistributionCheckTbl">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="float" />
+    <Property Name="Expr1" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Friends and Family' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Friends and Family">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="FTE">
+    <Key>
+      <PropertyRef Name="PC_KEY" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" Nullable="false" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.GeneralInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GeneralInfo">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="DollarsPerFTE" Type="float" />
+    <Property Name="DollarsPerPD" Type="float" />
+    <Property Name="DollarsPerCN" Type="float" />
+    <Property Name="DollarsPerLN" Type="float" />
+    <Property Name="DollarsPerFN" Type="float" />
+    <Property Name="PercentCamping" Type="float" />
+    <Property Name="PercentLodging" Type="float" />
+    <Property Name="PercentFriends" Type="float" />
+    <Property Name="0" Type="float" />
+    <Property Name="1" Type="float" />
+    <Property Name="2" Type="float" />
+    <Property Name="3" Type="float" />
+    <Property Name="4" Type="float" />
+    <Property Name="5" Type="float" />
+    <Property Name="6" Type="float" />
+    <Property Name="7" Type="float" />
+    <Property Name="8" Type="float" />
+    <Property Name="9" Type="float" />
+    <Property Name="10" Type="float" />
+    <Property Name="11" Type="float" />
+    <Property Name="12" Type="float" />
+    <Property Name="13" Type="float" />
+    <Property Name="14" Type="float" />
+    <Property Name="15" Type="float" />
+    <Property Name="16" Type="float" />
+    <Property Name="17" Type="float" />
+    <Property Name="visitors" Type="float" />
+    <Property Name="capital" Type="float" />
+    <Property Name="rest" Type="float" />
+    <Property Name="RCRatio" Type="float" />
+    <Property Name="RVRatio" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="RecordiD" />
+    </Key>
+    <Property Name="user" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="emailid" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="region" Type="float" />
+    <Property Name="report" Type="float" />
+    <Property Name="country" Type="varchar" MaxLength="255" />
+    <Property Name="tab1" Type="bit" />
+    <Property Name="tab2" Type="bit" />
+    <Property Name="tab3" Type="bit" />
+    <Property Name="tab4" Type="bit" />
+    <Property Name="MainCR" Type="float" />
+    <Property Name="MainCNC" Type="float" />
+    <Property Name="CJV" Type="float" />
+    <Property Name="MainJNCB" Type="float" />
+    <Property Name="HMS" Type="float" />
+    <Property Name="tcs" Type="float" />
+    <Property Name="vc" Type="float" />
+    <Property Name="three1" Type="bit" />
+    <Property Name="three2" Type="float" />
+    <Property Name="three3" Type="float" />
+    <Property Name="three4" Type="bit" />
+    <Property Name="three5" Type="float" />
+    <Property Name="three6" Type="float" />
+    <Property Name="three7" Type="float" />
+    <Property Name="three8" Type="float" />
+    <Property Name="three9" Type="float" />
+    <Property Name="three10" Type="float" />
+    <Property Name="three11" Type="float" />
+    <Property Name="rmaina" Type="bit" />
+    <Property Name="rmainb" Type="bit" />
+    <Property Name="rmainc" Type="bit" />
+    <Property Name="rmaind" Type="bit" />
+    <Property Name="r1a" Type="float" />
+    <Property Name="r2a" Type="float" />
+    <Property Name="r3a" Type="float" />
+    <Property Name="r4a" Type="float" />
+    <Property Name="r5a" Type="float" />
+    <Property Name="r6a" Type="float" />
+    <Property Name="r7a" Type="float" />
+    <Property Name="r8a" Type="float" />
+    <Property Name="r9a" Type="float" />
+    <Property Name="r10a" Type="float" />
+    <Property Name="r11a" Type="float" />
+    <Property Name="r12a" Type="float" />
+    <Property Name="r13a" Type="float" />
+    <Property Name="r14a" Type="float" />
+    <Property Name="r15a" Type="float" />
+    <Property Name="r16a" Type="float" />
+    <Property Name="r17a" Type="float" />
+    <Property Name="r18a" Type="float" />
+    <Property Name="r19a" Type="float" />
+    <Property Name="r20a" Type="float" />
+    <Property Name="r21a" Type="float" />
+    <Property Name="r22a" Type="float" />
+    <Property Name="r23a" Type="float" />
+    <Property Name="r24a" Type="float" />
+    <Property Name="r25a" Type="float" />
+    <Property Name="r26a" Type="float" />
+    <Property Name="r27a" Type="float" />
+    <Property Name="r28a" Type="float" />
+    <Property Name="r29a" Type="float" />
+    <Property Name="r30a" Type="float" />
+    <Property Name="r31a" Type="float" />
+    <Property Name="r32a" Type="float" />
+    <Property Name="r33a" Type="float" />
+    <Property Name="r34a" Type="float" />
+    <Property Name="r35a" Type="float" />
+    <Property Name="r36a" Type="float" />
+    <Property Name="r37a" Type="float" />
+    <Property Name="r38a" Type="float" />
+    <Property Name="r39a" Type="float" />
+    <Property Name="r40a" Type="float" />
+    <Property Name="r1b" Type="float" />
+    <Property Name="r2b" Type="float" />
+    <Property Name="r3b" Type="float" />
+    <Property Name="r4b" Type="float" />
+    <Property Name="r5b" Type="float" />
+    <Property Name="r6b" Type="float" />
+    <Property Name="r7b" Type="float" />
+    <Property Name="r8b" Type="float" />
+    <Property Name="r9b" Type="float" />
+    <Property Name="r10b" Type="float" />
+    <Property Name="r11b" Type="float" />
+    <Property Name="r12b" Type="float" />
+    <Property Name="r13b" Type="float" />
+    <Property Name="r14b" Type="float" />
+    <Property Name="r15b" Type="float" />
+    <Property Name="r16b" Type="float" />
+    <Property Name="r17b" Type="float" />
+    <Property Name="r18b" Type="float" />
+    <Property Name="r19b" Type="float" />
+    <Property Name="r20b" Type="float" />
+    <Property Name="r21b" Type="float" />
+    <Property Name="r22b" Type="float" />
+    <Property Name="r23b" Type="float" />
+    <Property Name="r24b" Type="float" />
+    <Property Name="r25b" Type="float" />
+    <Property Name="r26b" Type="float" />
+    <Property Name="r27b" Type="float" />
+    <Property Name="r28b" Type="float" />
+    <Property Name="r29b" Type="float" />
+    <Property Name="r30b" Type="float" />
+    <Property Name="r31b" Type="float" />
+    <Property Name="r32b" Type="float" />
+    <Property Name="r33b" Type="float" />
+    <Property Name="r34b" Type="float" />
+    <Property Name="r35b" Type="float" />
+    <Property Name="r36b" Type="float" />
+    <Property Name="r37b" Type="float" />
+    <Property Name="r38b" Type="float" />
+    <Property Name="r39b" Type="float" />
+    <Property Name="r40b" Type="float" />
+    <Property Name="r1c" Type="float" />
+    <Property Name="r2c" Type="float" />
+    <Property Name="r3c" Type="float" />
+    <Property Name="r4c" Type="float" />
+    <Property Name="r5c" Type="float" />
+    <Property Name="r6c" Type="float" />
+    <Property Name="r7c" Type="float" />
+    <Property Name="r8c" Type="float" />
+    <Property Name="r9c" Type="float" />
+    <Property Name="r10c" Type="float" />
+    <Property Name="r11c" Type="float" />
+    <Property Name="r12c" Type="float" />
+    <Property Name="r13c" Type="float" />
+    <Property Name="r14c" Type="float" />
+    <Property Name="r15c" Type="float" />
+    <Property Name="r16c" Type="float" />
+    <Property Name="r17c" Type="float" />
+    <Property Name="r18c" Type="float" />
+    <Property Name="r19c" Type="float" />
+    <Property Name="r20c" Type="float" />
+    <Property Name="r21c" Type="float" />
+    <Property Name="r22c" Type="float" />
+    <Property Name="r23c" Type="float" />
+    <Property Name="r24c" Type="float" />
+    <Property Name="r25c" Type="float" />
+    <Property Name="r26c" Type="float" />
+    <Property Name="r27c" Type="float" />
+    <Property Name="r28c" Type="float" />
+    <Property Name="r29c" Type="float" />
+    <Property Name="r30c" Type="float" />
+    <Property Name="r31c" Type="float" />
+    <Property Name="r32c" Type="float" />
+    <Property Name="r33c" Type="float" />
+    <Property Name="r34c" Type="float" />
+    <Property Name="r35c" Type="float" />
+    <Property Name="r36c" Type="float" />
+    <Property Name="r37c" Type="float" />
+    <Property Name="r38c" Type="float" />
+    <Property Name="r39c" Type="float" />
+    <Property Name="r40c" Type="float" />
+    <Property Name="r1d" Type="float" />
+    <Property Name="r2d" Type="float" />
+    <Property Name="r3d" Type="float" />
+    <Property Name="r4d" Type="float" />
+    <Property Name="r5d" Type="float" />
+    <Property Name="r6d" Type="float" />
+    <Property Name="r7d" Type="float" />
+    <Property Name="r8d" Type="float" />
+    <Property Name="r9d" Type="float" />
+    <Property Name="r10d" Type="float" />
+    <Property Name="r11d" Type="float" />
+    <Property Name="r12d" Type="float" />
+    <Property Name="r13d" Type="float" />
+    <Property Name="r14d" Type="float" />
+    <Property Name="r15d" Type="float" />
+    <Property Name="r16d" Type="float" />
+    <Property Name="r17d" Type="float" />
+    <Property Name="r18d" Type="float" />
+    <Property Name="r19d" Type="float" />
+    <Property Name="r20d" Type="float" />
+    <Property Name="r21d" Type="float" />
+    <Property Name="r22d" Type="float" />
+    <Property Name="r23d" Type="float" />
+    <Property Name="r24d" Type="float" />
+    <Property Name="r25d" Type="float" />
+    <Property Name="r26d" Type="float" />
+    <Property Name="r27d" Type="float" />
+    <Property Name="r28d" Type="float" />
+    <Property Name="r29d" Type="float" />
+    <Property Name="r30d" Type="float" />
+    <Property Name="r31d" Type="float" />
+    <Property Name="r32d" Type="float" />
+    <Property Name="r33d" Type="float" />
+    <Property Name="r34d" Type="float" />
+    <Property Name="r35d" Type="float" />
+    <Property Name="r36d" Type="float" />
+    <Property Name="r37d" Type="float" />
+    <Property Name="r38d" Type="float" />
+    <Property Name="r39d" Type="float" />
+    <Property Name="r40d" Type="float" />
+    <Property Name="datetime" Type="nvarchar" MaxLength="50" />
+    <Property Name="additioanl2" Type="varchar" MaxLength="255" />
+    <Property Name="additioanl3" Type="varchar" MaxLength="255" />
+    <Property Name="additioanl4" Type="varchar" MaxLength="255" />
+    <Property Name="RecordiD" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="I/O Codes Old">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="float" Nullable="false" />
+    <Property Name="IO code" Type="float" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="PC I-O" Type="int" />
+    <Property Name="Replication times" Type="int" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="iocodes_new">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IO_KEY" Type="int" />
+    <Property Name="IO_DESC" Type="varchar" MaxLength="255" />
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="PC_KEY_FOUND" Type="int" />
+    <Property Name="SIC" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.JointVentures' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="JointVentures">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="int" />
+    <Property Name="IO_KEY" Type="float" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Lodging' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Lodging">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.MCapital' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="MCapital">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="float" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.MTheRest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="MTheRest">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="float" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.MTourism' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="MTourism">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="float" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Nation_Area' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Nation_Area">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Value" Type="float" />
+    <Property Name="Population" Type="float" />
+    <Property Name="StateFipsCode" Type="int" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.New Stores and Restaurants' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="New Stores and Restaurants">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.OccupationDistribution' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="OccupationDistribution">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="OccupationID" Type="varchar" MaxLength="9" />
+    <Property Name="RIO" Type="int" />
+    <Property Name="IndustryID" Type="int" />
+    <Property Name="OccupationIndex" Type="int" />
+    <Property Name="Percent" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="P(nation)">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="P" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.RegionalData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="RegionalData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="FipsCode" Type="float" />
+    <Property Name="RIO" Type="float" />
+    <Property Name="Inc" Type="float" />
+    <Property Name="Emp" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Wages" Type="float" />
+    <Property Name="StateLocal" Type="float" />
+    <Property Name="Federal" Type="float" />
+    <Property Name="Insurance" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Regions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="FipsCode" Type="float" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.Rehab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rehab">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="int" />
+    <Property Name="RH_KEY" Type="smallint" />
+    <Property Name="PC_KEY" Type="smallint" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblBase">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Income" Type="float" />
+    <Property Name="Employment" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Output" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblDirectEffects' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblDirectEffects">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Industry" Type="varchar" MaxLength="250" />
+    <Property Name="IndustryID" Type="int" />
+    <Property Name="Section" Type="varchar" MaxLength="250" />
+    <Property Name="SectionID" Type="int" />
+    <Property Name="Employment" Type="float" />
+    <Property Name="Income" Type="float" />
+    <Property Name="GrossStateProduct" Type="float" />
+    <Property Name="Output" Type="float" />
+    <Property Name="SIC" Type="int" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblEconomicBase' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblEconomicBase">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="float" />
+    <Property Name="Employment2" Type="float" />
+    <Property Name="Employment3" Type="float" />
+    <Property Name="Employment4" Type="float" />
+    <Property Name="Employment5" Type="float" />
+    <Property Name="Employment6" Type="float" />
+    <Property Name="Employment7" Type="float" />
+    <Property Name="Employment8" Type="float" />
+    <Property Name="Employment9" Type="float" />
+    <Property Name="Employment10" Type="float" />
+    <Property Name="Employment11" Type="float" />
+    <Property Name="Income1" Type="float" />
+    <Property Name="Income2" Type="float" />
+    <Property Name="Income3" Type="float" />
+    <Property Name="Income4" Type="float" />
+    <Property Name="Income5" Type="float" />
+    <Property Name="Income6" Type="float" />
+    <Property Name="Income7" Type="float" />
+    <Property Name="Income8" Type="float" />
+    <Property Name="Income9" Type="float" />
+    <Property Name="Income10" Type="float" />
+    <Property Name="Income11" Type="float" />
+    <Property Name="Gross1" Type="float" />
+    <Property Name="Gross2" Type="float" />
+    <Property Name="Gross3" Type="float" />
+    <Property Name="Gross4" Type="float" />
+    <Property Name="Gross5" Type="float" />
+    <Property Name="Gross6" Type="float" />
+    <Property Name="Gross7" Type="float" />
+    <Property Name="Gross8" Type="float" />
+    <Property Name="Gross9" Type="float" />
+    <Property Name="Gross10" Type="float" />
+    <Property Name="Gross11" Type="float" />
+    <Property Name="Output1" Type="float" />
+    <Property Name="Output2" Type="float" />
+    <Property Name="Output3" Type="float" />
+    <Property Name="Output4" Type="float" />
+    <Property Name="Output5" Type="float" />
+    <Property Name="Output6" Type="float" />
+    <Property Name="Output7" Type="float" />
+    <Property Name="Output8" Type="float" />
+    <Property Name="Output9" Type="float" />
+    <Property Name="Output10" Type="float" />
+    <Property Name="Output11" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblGeneralIndustry' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblGeneralIndustry">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="float" />
+    <Property Name="Employment2" Type="float" />
+    <Property Name="Employment3" Type="float" />
+    <Property Name="Employment4" Type="float" />
+    <Property Name="Employment5" Type="float" />
+    <Property Name="Employment6" Type="float" />
+    <Property Name="Employment7" Type="float" />
+    <Property Name="Employment8" Type="float" />
+    <Property Name="Employment9" Type="float" />
+    <Property Name="Employment10" Type="float" />
+    <Property Name="Employment11" Type="float" />
+    <Property Name="Employment12" Type="float" />
+    <Property Name="Employment13" Type="float" />
+    <Property Name="Employment14" Type="float" />
+    <Property Name="Income1" Type="float" />
+    <Property Name="Income2" Type="float" />
+    <Property Name="Income3" Type="float" />
+    <Property Name="Income4" Type="float" />
+    <Property Name="Income5" Type="float" />
+    <Property Name="Income6" Type="float" />
+    <Property Name="Income7" Type="float" />
+    <Property Name="Income8" Type="float" />
+    <Property Name="Income9" Type="float" />
+    <Property Name="Income10" Type="float" />
+    <Property Name="Income11" Type="float" />
+    <Property Name="Income12" Type="float" />
+    <Property Name="Income13" Type="float" />
+    <Property Name="Income14" Type="float" />
+    <Property Name="Gross1" Type="float" />
+    <Property Name="Gross2" Type="float" />
+    <Property Name="Gross3" Type="float" />
+    <Property Name="Gross4" Type="float" />
+    <Property Name="Gross5" Type="float" />
+    <Property Name="Gross6" Type="float" />
+    <Property Name="Gross7" Type="float" />
+    <Property Name="Gross8" Type="float" />
+    <Property Name="Gross9" Type="float" />
+    <Property Name="Gross10" Type="float" />
+    <Property Name="Gross11" Type="float" />
+    <Property Name="Gross12" Type="float" />
+    <Property Name="Gross13" Type="float" />
+    <Property Name="Gross14" Type="float" />
+    <Property Name="Gross15" Type="float" />
+    <Property Name="Gross16" Type="float" />
+    <Property Name="Gross17" Type="float" />
+    <Property Name="Gross18" Type="float" />
+    <Property Name="Gross19" Type="float" />
+    <Property Name="Gross20" Type="float" />
+    <Property Name="Gross21" Type="float" />
+    <Property Name="Gross22" Type="float" />
+    <Property Name="Gross23" Type="float" />
+    <Property Name="Gross24" Type="float" />
+    <Property Name="Gross25" Type="float" />
+    <Property Name="Output1" Type="float" />
+    <Property Name="Output2" Type="float" />
+    <Property Name="Output3" Type="float" />
+    <Property Name="Output4" Type="float" />
+    <Property Name="Output5" Type="float" />
+    <Property Name="Output6" Type="float" />
+    <Property Name="Output7" Type="float" />
+    <Property Name="Output8" Type="float" />
+    <Property Name="Output9" Type="float" />
+    <Property Name="Output10" Type="float" />
+    <Property Name="Output11" Type="float" />
+    <Property Name="Output12" Type="float" />
+    <Property Name="Output13" Type="float" />
+    <Property Name="Output14" Type="float" />
+    <Property Name="InitialEffect" Type="float" />
+    <Property Name="Gross26" Type="float" />
+    <Property Name="Gross27" Type="float" />
+    <Property Name="Gross28" Type="float" />
+    <Property Name="Gross29" Type="float" />
+    <Property Name="Gross30" Type="float" />
+    <Property Name="PersonalIncome" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblIndustry' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblIndustry">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Industry" Type="varchar" MaxLength="250" />
+    <Property Name="IndustryID" Type="int" />
+    <Property Name="Section" Type="varchar" MaxLength="250" />
+    <Property Name="SectionID" Type="int" />
+    <Property Name="Employment" Type="float" />
+    <Property Name="Income" Type="float" />
+    <Property Name="GrossStateProduct" Type="float" />
+    <Property Name="Output" Type="float" />
+    <Property Name="SIC" Type="int" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblOccupations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblOccupations">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="OccupationIndex" Type="int" />
+    <Property Name="OccupationID" Type="varchar" MaxLength="50" />
+    <Property Name="GroupName" Type="varchar" MaxLength="255" />
+    <Property Name="GroupID" Type="int" />
+    <Property Name="SectionName" Type="varchar" MaxLength="255" />
+    <Property Name="SectionID" Type="int" />
+    <Property Name="DetailsName" Type="varchar" MaxLength="255" />
+    <Property Name="DitailsID" Type="int" />
+    <Property Name="Value" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.tblShares' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tblShares">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="float" />
+    <Property Name="Employment2" Type="float" />
+    <Property Name="Employment3" Type="float" />
+    <Property Name="Employment4" Type="float" />
+    <Property Name="Employment5" Type="float" />
+    <Property Name="Employment6" Type="float" />
+    <Property Name="Employment7" Type="float" />
+    <Property Name="Employment8" Type="float" />
+    <Property Name="Employment9" Type="float" />
+    <Property Name="Employment10" Type="float" />
+    <Property Name="Employment11" Type="float" />
+    <Property Name="Income1" Type="float" />
+    <Property Name="Income2" Type="float" />
+    <Property Name="Income3" Type="float" />
+    <Property Name="Income4" Type="float" />
+    <Property Name="Income5" Type="float" />
+    <Property Name="Income6" Type="float" />
+    <Property Name="Income7" Type="float" />
+    <Property Name="Income8" Type="float" />
+    <Property Name="Income9" Type="float" />
+    <Property Name="Income10" Type="float" />
+    <Property Name="Income11" Type="float" />
+    <Property Name="Gross1" Type="float" />
+    <Property Name="Gross2" Type="float" />
+    <Property Name="Gross3" Type="float" />
+    <Property Name="Gross4" Type="float" />
+    <Property Name="Gross5" Type="float" />
+    <Property Name="Gross6" Type="float" />
+    <Property Name="Gross7" Type="float" />
+    <Property Name="Gross8" Type="float" />
+    <Property Name="Gross9" Type="float" />
+    <Property Name="Gross10" Type="float" />
+    <Property Name="Gross11" Type="float" />
+    <Property Name="Output1" Type="float" />
+    <Property Name="Output2" Type="float" />
+    <Property Name="Output3" Type="float" />
+    <Property Name="Output4" Type="float" />
+    <Property Name="Output5" Type="float" />
+    <Property Name="Output6" Type="float" />
+    <Property Name="Output7" Type="float" />
+    <Property Name="Output8" Type="float" />
+    <Property Name="Output9" Type="float" />
+    <Property Name="Output10" Type="float" />
+    <Property Name="Output11" Type="float" />
+    <Property Name="PrivateOut" Type="float" />
+    <Property Name="TotOut" Type="float" />
+    <Property Name="PrivateEmp" Type="float" />
+    <Property Name="PrivateGDP" Type="float" />
+    <Property Name="PrivateInc" Type="float" />
+    <Property Name="TotEmp" Type="float" />
+    <Property Name="TotInc" Type="float" />
+    <Property Name="TotGDP" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Income" Type="float" />
+    <Property Name="Employment" Type="float" />
+    <Property Name="GDP" Type="float" />
+    <Property Name="Output" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.TempPC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="TempPC">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.VectorAA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VectorAA">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.VectorAADistribution' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VectorAADistribution">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="int" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.z_AlabamaRest_AMatrix' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="z_AlabamaRest_AMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VALUE" Type="float" />
+    <Property Name="SSMA_TimeStamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PEI.dbo.ZNewIoCodes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ZNewIoCodes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IO_KEY" Type="int" />
+    <Property Name="IO_DESC" Type="varchar" MaxLength="255" />
+    <Property Name="PC_KEY" Type="int" />
+    <Property Name="PC_KEY_FOUND" Type="int" />
+    <Property Name="SIC" Type="int" />
+  </EntityType>
+  <Function Name="spAlabama_AMatrix" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAlabama_Area" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAlabama_DefaultData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAlabama_LeontievInverse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAlabamaRest_Area" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spAlabamaRest_DefaultData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="spz_AlabamaRest_AMatrix" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tname" Type="nvarchar" Mode="In" />
+  </Function>
+</Schema>

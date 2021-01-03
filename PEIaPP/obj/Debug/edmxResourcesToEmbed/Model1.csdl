@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PEIModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PEIEntities7" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alabama_AMatrix" EntityType="PEIModel.Alabama_AMatrix" />
+    <EntitySet Name="Alabama_Area" EntityType="PEIModel.Alabama_Area" />
+    <EntitySet Name="Alabama_DefaultData" EntityType="PEIModel.Alabama_DefaultData" />
+    <EntitySet Name="Alabama_GridAlabama_RegionData" EntityType="PEIModel.Alabama_GridAlabama_RegionData" />
+    <EntitySet Name="Alabama_GridRegionValues" EntityType="PEIModel.Alabama_GridRegionValues" />
+    <EntitySet Name="Alabama_LeontievInverse" EntityType="PEIModel.Alabama_LeontievInverse" />
+    <EntitySet Name="Alabama_RegionData" EntityType="PEIModel.Alabama_RegionData" />
+    <EntitySet Name="Alabama_Regions" EntityType="PEIModel.Alabama_Regions" />
+    <EntitySet Name="AlabamaRest_Area" EntityType="PEIModel.AlabamaRest_Area" />
+    <EntitySet Name="AlabamaRest_DefaultData" EntityType="PEIModel.AlabamaRest_DefaultData" />
+    <EntitySet Name="AlabamaRest_GridRegionValues" EntityType="PEIModel.AlabamaRest_GridRegionValues" />
+    <EntitySet Name="AlabamaRest_LeontievInverse" EntityType="PEIModel.AlabamaRest_LeontievInverse" />
+    <EntitySet Name="AlabamaRest_RegionData" EntityType="PEIModel.AlabamaRest_RegionData" />
+    <EntitySet Name="Campings" EntityType="PEIModel.Camping" />
+    <EntitySet Name="Day_Trips" EntityType="PEIModel.Day_Trip" />
+    <EntitySet Name="DefaultDatas" EntityType="PEIModel.DefaultData" />
+    <EntitySet Name="Distributions" EntityType="PEIModel.Distribution" />
+    <EntitySet Name="DistributionCheckTbls" EntityType="PEIModel.DistributionCheckTbl" />
+    <EntitySet Name="Friends_and_Families" EntityType="PEIModel.Friends_and_Family" />
+    <EntitySet Name="FTEs" EntityType="PEIModel.FTE" />
+    <EntitySet Name="GeneralInfoes" EntityType="PEIModel.GeneralInfo" />
+    <EntitySet Name="I_O_Codes_Old" EntityType="PEIModel.I_O_Codes_Old" />
+    <EntitySet Name="iocodes_new" EntityType="PEIModel.iocodes_new" />
+    <EntitySet Name="JointVentures" EntityType="PEIModel.JointVenture" />
+    <EntitySet Name="Lodgings" EntityType="PEIModel.Lodging" />
+    <EntitySet Name="MCapitals" EntityType="PEIModel.MCapital" />
+    <EntitySet Name="MTheRests" EntityType="PEIModel.MTheRest" />
+    <EntitySet Name="MTourism" EntityType="PEIModel.MTourism" />
+    <EntitySet Name="Nation_Area" EntityType="PEIModel.Nation_Area" />
+    <EntitySet Name="OccupationDistributions" EntityType="PEIModel.OccupationDistribution" />
+    <EntitySet Name="P_nation_" EntityType="PEIModel.P_nation_" />
+    <EntitySet Name="RegionalDatas" EntityType="PEIModel.RegionalData" />
+    <EntitySet Name="Regions" EntityType="PEIModel.Region" />
+    <EntitySet Name="Rehabs" EntityType="PEIModel.Rehab" />
+    <EntitySet Name="tblBases" EntityType="PEIModel.tblBase" />
+    <EntitySet Name="tblDirectEffects" EntityType="PEIModel.tblDirectEffect" />
+    <EntitySet Name="tblEconomicBases" EntityType="PEIModel.tblEconomicBase" />
+    <EntitySet Name="tblGeneralIndustries" EntityType="PEIModel.tblGeneralIndustry" />
+    <EntitySet Name="tblIndustries" EntityType="PEIModel.tblIndustry" />
+    <EntitySet Name="tblOccupations" EntityType="PEIModel.tblOccupation" />
+    <EntitySet Name="tblShares" EntityType="PEIModel.tblShare" />
+    <EntitySet Name="tblTemps" EntityType="PEIModel.tblTemp" />
+    <EntitySet Name="TempPCs" EntityType="PEIModel.TempPC" />
+    <EntitySet Name="VectorAAs" EntityType="PEIModel.VectorAA" />
+    <EntitySet Name="VectorAADistributions" EntityType="PEIModel.VectorAADistribution" />
+    <EntitySet Name="z_AlabamaRest_AMatrix" EntityType="PEIModel.z_AlabamaRest_AMatrix" />
+    <EntitySet Name="ZNewIoCodes" EntityType="PEIModel.ZNewIoCode" />
+    <FunctionImport Name="spAlabama_AMatrix" EntitySet="Alabama_AMatrix" ReturnType="Collection(PEIModel.Alabama_AMatrix)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spAlabama_Area" EntitySet="Alabama_Area" ReturnType="Collection(PEIModel.Alabama_Area)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spAlabama_DefaultData" EntitySet="Alabama_DefaultData" ReturnType="Collection(PEIModel.Alabama_DefaultData)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spAlabama_LeontievInverse" EntitySet="Alabama_LeontievInverse" ReturnType="Collection(PEIModel.Alabama_LeontievInverse)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spAlabamaRest_Area" EntitySet="AlabamaRest_Area" ReturnType="Collection(PEIModel.AlabamaRest_Area)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spAlabamaRest_DefaultData" EntitySet="AlabamaRest_DefaultData" ReturnType="Collection(PEIModel.AlabamaRest_DefaultData)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spz_AlabamaRest_AMatrix" EntitySet="z_AlabamaRest_AMatrix" ReturnType="Collection(PEIModel.z_AlabamaRest_AMatrix)">
+      <Parameter Name="tname" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="New_Stores_and_Restaurants" EntityType="PEIModel.New_Stores_and_Restaurant" />
+    <EntitySet Name="Histories" EntityType="PEIModel.History" />
+  </EntityContainer>
+  <EntityType Name="Alabama_AMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VALUE" Type="Double" />
+  </EntityType>
+  <EntityType Name="Alabama_Area">
+    <Key>
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Value" Type="Double" Nullable="false" />
+    <Property Name="Population" Type="Double" />
+    <Property Name="StateFipsCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Alabama_DefaultData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="Int32" Nullable="false" />
+    <Property Name="RIO_KEY" Type="Int32" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="REGION_ID" Type="Int32" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="FederalIns" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Alabama_GridAlabama_RegionData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="Int32" Nullable="false" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+  </EntityType>
+  <EntityType Name="Alabama_GridRegionValues">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="Int32" Nullable="false" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Alabama_LeontievInverse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="VALUE" Type="Double" />
+  </EntityType>
+  <EntityType Name="Alabama_RegionData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="Int32" Nullable="false" />
+    <Property Name="RIO_KEY" Type="Int32" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="REGION_ID" Type="Int32" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="FederalIns" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Alabama_Regions">
+    <Key>
+      <PropertyRef Name="REGION_ID" />
+    </Key>
+    <Property Name="REGION_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AlabamaRest_Area">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Value" Type="Double" />
+    <Property Name="Population" Type="Double" />
+    <Property Name="StateFipsCode" Type="Int32" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AlabamaRest_DefaultData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="RIO_KEY" Type="Int32" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="REGION_ID" Type="Int32" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="FederalIns" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AlabamaRest_GridRegionValues">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AlabamaRest_LeontievInverse">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AlabamaRest_RegionData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="RIO_KEY" Type="Int32" />
+    <Property Name="RIO_DESC" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="REGION_ID" Type="Int32" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="FederalIns" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Camping">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Day_Trip">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="DefaultData">
+    <Key>
+      <PropertyRef Name="RIO" />
+    </Key>
+    <Property Name="RIO" Type="Int32" Nullable="false" />
+    <Property Name="RIO_KEY" Type="Int32" />
+    <Property Name="REGION_ID" Type="Int32" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="P" Type="Double" />
+    <Property Name="FederalGen" Type="Double" />
+    <Property Name="FederalIns" Type="Double" />
+    <Property Name="State" Type="Double" />
+    <Property Name="Local" Type="Double" />
+    <Property Name="Supply" Type="Double" />
+    <Property Name="Demand" Type="Double" />
+    <Property Name="IncomeTotal" Type="Double" />
+    <Property Name="EmploymentTotal" Type="Double" />
+    <Property Name="GDPTotal" Type="Double" />
+    <Property Name="LocalTotal" Type="Double" />
+    <Property Name="StateTotal" Type="Double" />
+    <Property Name="FederalGenTotal" Type="Double" />
+    <Property Name="Locked" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Distribution">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Double" Nullable="false" />
+    <Property Name="C0" Type="Double" />
+    <Property Name="C1" Type="Double" />
+    <Property Name="C2" Type="Double" />
+    <Property Name="C3" Type="Double" />
+    <Property Name="C4" Type="Double" />
+    <Property Name="C5" Type="Double" />
+    <Property Name="C6" Type="Double" />
+    <Property Name="C7" Type="Double" />
+    <Property Name="C8" Type="Double" />
+    <Property Name="C9" Type="Double" />
+    <Property Name="C10" Type="Double" />
+    <Property Name="C11" Type="Double" />
+    <Property Name="C12" Type="Double" />
+    <Property Name="C13" Type="Double" />
+    <Property Name="C14" Type="Double" />
+    <Property Name="C15" Type="Double" />
+    <Property Name="C16" Type="Double" />
+    <Property Name="C17" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="DistributionCheckTbl">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="Double" />
+    <Property Name="Expr1" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Friends_and_Family">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="FTE">
+    <Key>
+      <PropertyRef Name="PC_KEY" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" Nullable="false" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="GeneralInfo">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="DollarsPerFTE" Type="Double" />
+    <Property Name="DollarsPerPD" Type="Double" />
+    <Property Name="DollarsPerCN" Type="Double" />
+    <Property Name="DollarsPerLN" Type="Double" />
+    <Property Name="DollarsPerFN" Type="Double" />
+    <Property Name="PercentCamping" Type="Double" />
+    <Property Name="PercentLodging" Type="Double" />
+    <Property Name="PercentFriends" Type="Double" />
+    <Property Name="C0" Type="Double" />
+    <Property Name="C1" Type="Double" />
+    <Property Name="C2" Type="Double" />
+    <Property Name="C3" Type="Double" />
+    <Property Name="C4" Type="Double" />
+    <Property Name="C5" Type="Double" />
+    <Property Name="C6" Type="Double" />
+    <Property Name="C7" Type="Double" />
+    <Property Name="C8" Type="Double" />
+    <Property Name="C9" Type="Double" />
+    <Property Name="C10" Type="Double" />
+    <Property Name="C11" Type="Double" />
+    <Property Name="C12" Type="Double" />
+    <Property Name="C13" Type="Double" />
+    <Property Name="C14" Type="Double" />
+    <Property Name="C15" Type="Double" />
+    <Property Name="C16" Type="Double" />
+    <Property Name="C17" Type="Double" />
+    <Property Name="visitors" Type="Double" />
+    <Property Name="capital" Type="Double" />
+    <Property Name="rest" Type="Double" />
+    <Property Name="RCRatio" Type="Double" />
+    <Property Name="RVRatio" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="I_O_Codes_Old">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Double" Nullable="false" />
+    <Property Name="IO_code" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="PC_I_O" Type="Int32" />
+    <Property Name="Replication_times" Type="Int32" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="iocodes_new">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IO_KEY" Type="Int32" />
+    <Property Name="IO_DESC" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="PC_KEY_FOUND" Type="Int32" />
+    <Property Name="SIC" Type="Int32" />
+  </EntityType>
+  <EntityType Name="JointVenture">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="IO_KEY" Type="Double" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Lodging">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="MCapital">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Double" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="MTheRest">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Double" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="MTourism">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Double" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Nation_Area">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Value" Type="Double" />
+    <Property Name="Population" Type="Double" />
+    <Property Name="StateFipsCode" Type="Int32" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OccupationDistribution">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="OccupationID" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="IndustryID" Type="Int32" />
+    <Property Name="OccupationIndex" Type="Int32" />
+    <Property Name="Percent" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="P_nation_">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="P" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="RegionalData">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="FipsCode" Type="Double" />
+    <Property Name="RIO" Type="Double" />
+    <Property Name="Inc" Type="Double" />
+    <Property Name="Emp" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Wages" Type="Double" />
+    <Property Name="StateLocal" Type="Double" />
+    <Property Name="Federal" Type="Double" />
+    <Property Name="Insurance" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="FipsCode" Type="Double" />
+    <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Rehab">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="RH_KEY" Type="Int16" />
+    <Property Name="PC_KEY" Type="Int16" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblBase">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Income" Type="Double" />
+    <Property Name="Employment" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Output" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblDirectEffect">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Industry" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IndustryID" Type="Int32" />
+    <Property Name="Section" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="SectionID" Type="Int32" />
+    <Property Name="Employment" Type="Double" />
+    <Property Name="Income" Type="Double" />
+    <Property Name="GrossStateProduct" Type="Double" />
+    <Property Name="Output" Type="Double" />
+    <Property Name="SIC" Type="Int32" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblEconomicBase">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="Double" />
+    <Property Name="Employment2" Type="Double" />
+    <Property Name="Employment3" Type="Double" />
+    <Property Name="Employment4" Type="Double" />
+    <Property Name="Employment5" Type="Double" />
+    <Property Name="Employment6" Type="Double" />
+    <Property Name="Employment7" Type="Double" />
+    <Property Name="Employment8" Type="Double" />
+    <Property Name="Employment9" Type="Double" />
+    <Property Name="Employment10" Type="Double" />
+    <Property Name="Employment11" Type="Double" />
+    <Property Name="Income1" Type="Double" />
+    <Property Name="Income2" Type="Double" />
+    <Property Name="Income3" Type="Double" />
+    <Property Name="Income4" Type="Double" />
+    <Property Name="Income5" Type="Double" />
+    <Property Name="Income6" Type="Double" />
+    <Property Name="Income7" Type="Double" />
+    <Property Name="Income8" Type="Double" />
+    <Property Name="Income9" Type="Double" />
+    <Property Name="Income10" Type="Double" />
+    <Property Name="Income11" Type="Double" />
+    <Property Name="Gross1" Type="Double" />
+    <Property Name="Gross2" Type="Double" />
+    <Property Name="Gross3" Type="Double" />
+    <Property Name="Gross4" Type="Double" />
+    <Property Name="Gross5" Type="Double" />
+    <Property Name="Gross6" Type="Double" />
+    <Property Name="Gross7" Type="Double" />
+    <Property Name="Gross8" Type="Double" />
+    <Property Name="Gross9" Type="Double" />
+    <Property Name="Gross10" Type="Double" />
+    <Property Name="Gross11" Type="Double" />
+    <Property Name="Output1" Type="Double" />
+    <Property Name="Output2" Type="Double" />
+    <Property Name="Output3" Type="Double" />
+    <Property Name="Output4" Type="Double" />
+    <Property Name="Output5" Type="Double" />
+    <Property Name="Output6" Type="Double" />
+    <Property Name="Output7" Type="Double" />
+    <Property Name="Output8" Type="Double" />
+    <Property Name="Output9" Type="Double" />
+    <Property Name="Output10" Type="Double" />
+    <Property Name="Output11" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblGeneralIndustry">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="Double" />
+    <Property Name="Employment2" Type="Double" />
+    <Property Name="Employment3" Type="Double" />
+    <Property Name="Employment4" Type="Double" />
+    <Property Name="Employment5" Type="Double" />
+    <Property Name="Employment6" Type="Double" />
+    <Property Name="Employment7" Type="Double" />
+    <Property Name="Employment8" Type="Double" />
+    <Property Name="Employment9" Type="Double" />
+    <Property Name="Employment10" Type="Double" />
+    <Property Name="Employment11" Type="Double" />
+    <Property Name="Employment12" Type="Double" />
+    <Property Name="Employment13" Type="Double" />
+    <Property Name="Employment14" Type="Double" />
+    <Property Name="Income1" Type="Double" />
+    <Property Name="Income2" Type="Double" />
+    <Property Name="Income3" Type="Double" />
+    <Property Name="Income4" Type="Double" />
+    <Property Name="Income5" Type="Double" />
+    <Property Name="Income6" Type="Double" />
+    <Property Name="Income7" Type="Double" />
+    <Property Name="Income8" Type="Double" />
+    <Property Name="Income9" Type="Double" />
+    <Property Name="Income10" Type="Double" />
+    <Property Name="Income11" Type="Double" />
+    <Property Name="Income12" Type="Double" />
+    <Property Name="Income13" Type="Double" />
+    <Property Name="Income14" Type="Double" />
+    <Property Name="Gross1" Type="Double" />
+    <Property Name="Gross2" Type="Double" />
+    <Property Name="Gross3" Type="Double" />
+    <Property Name="Gross4" Type="Double" />
+    <Property Name="Gross5" Type="Double" />
+    <Property Name="Gross6" Type="Double" />
+    <Property Name="Gross7" Type="Double" />
+    <Property Name="Gross8" Type="Double" />
+    <Property Name="Gross9" Type="Double" />
+    <Property Name="Gross10" Type="Double" />
+    <Property Name="Gross11" Type="Double" />
+    <Property Name="Gross12" Type="Double" />
+    <Property Name="Gross13" Type="Double" />
+    <Property Name="Gross14" Type="Double" />
+    <Property Name="Gross15" Type="Double" />
+    <Property Name="Gross16" Type="Double" />
+    <Property Name="Gross17" Type="Double" />
+    <Property Name="Gross18" Type="Double" />
+    <Property Name="Gross19" Type="Double" />
+    <Property Name="Gross20" Type="Double" />
+    <Property Name="Gross21" Type="Double" />
+    <Property Name="Gross22" Type="Double" />
+    <Property Name="Gross23" Type="Double" />
+    <Property Name="Gross24" Type="Double" />
+    <Property Name="Gross25" Type="Double" />
+    <Property Name="Output1" Type="Double" />
+    <Property Name="Output2" Type="Double" />
+    <Property Name="Output3" Type="Double" />
+    <Property Name="Output4" Type="Double" />
+    <Property Name="Output5" Type="Double" />
+    <Property Name="Output6" Type="Double" />
+    <Property Name="Output7" Type="Double" />
+    <Property Name="Output8" Type="Double" />
+    <Property Name="Output9" Type="Double" />
+    <Property Name="Output10" Type="Double" />
+    <Property Name="Output11" Type="Double" />
+    <Property Name="Output12" Type="Double" />
+    <Property Name="Output13" Type="Double" />
+    <Property Name="Output14" Type="Double" />
+    <Property Name="InitialEffect" Type="Double" />
+    <Property Name="Gross26" Type="Double" />
+    <Property Name="Gross27" Type="Double" />
+    <Property Name="Gross28" Type="Double" />
+    <Property Name="Gross29" Type="Double" />
+    <Property Name="Gross30" Type="Double" />
+    <Property Name="PersonalIncome" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblIndustry">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Industry" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IndustryID" Type="Int32" />
+    <Property Name="Section" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="SectionID" Type="Int32" />
+    <Property Name="Employment" Type="Double" />
+    <Property Name="Income" Type="Double" />
+    <Property Name="GrossStateProduct" Type="Double" />
+    <Property Name="Output" Type="Double" />
+    <Property Name="SIC" Type="Int32" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblOccupation">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="OccupationIndex" Type="Int32" />
+    <Property Name="OccupationID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="GroupName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="SectionName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="SectionID" Type="Int32" />
+    <Property Name="DetailsName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="DitailsID" Type="Int32" />
+    <Property Name="Value" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblShare">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="Employment1" Type="Double" />
+    <Property Name="Employment2" Type="Double" />
+    <Property Name="Employment3" Type="Double" />
+    <Property Name="Employment4" Type="Double" />
+    <Property Name="Employment5" Type="Double" />
+    <Property Name="Employment6" Type="Double" />
+    <Property Name="Employment7" Type="Double" />
+    <Property Name="Employment8" Type="Double" />
+    <Property Name="Employment9" Type="Double" />
+    <Property Name="Employment10" Type="Double" />
+    <Property Name="Employment11" Type="Double" />
+    <Property Name="Income1" Type="Double" />
+    <Property Name="Income2" Type="Double" />
+    <Property Name="Income3" Type="Double" />
+    <Property Name="Income4" Type="Double" />
+    <Property Name="Income5" Type="Double" />
+    <Property Name="Income6" Type="Double" />
+    <Property Name="Income7" Type="Double" />
+    <Property Name="Income8" Type="Double" />
+    <Property Name="Income9" Type="Double" />
+    <Property Name="Income10" Type="Double" />
+    <Property Name="Income11" Type="Double" />
+    <Property Name="Gross1" Type="Double" />
+    <Property Name="Gross2" Type="Double" />
+    <Property Name="Gross3" Type="Double" />
+    <Property Name="Gross4" Type="Double" />
+    <Property Name="Gross5" Type="Double" />
+    <Property Name="Gross6" Type="Double" />
+    <Property Name="Gross7" Type="Double" />
+    <Property Name="Gross8" Type="Double" />
+    <Property Name="Gross9" Type="Double" />
+    <Property Name="Gross10" Type="Double" />
+    <Property Name="Gross11" Type="Double" />
+    <Property Name="Output1" Type="Double" />
+    <Property Name="Output2" Type="Double" />
+    <Property Name="Output3" Type="Double" />
+    <Property Name="Output4" Type="Double" />
+    <Property Name="Output5" Type="Double" />
+    <Property Name="Output6" Type="Double" />
+    <Property Name="Output7" Type="Double" />
+    <Property Name="Output8" Type="Double" />
+    <Property Name="Output9" Type="Double" />
+    <Property Name="Output10" Type="Double" />
+    <Property Name="Output11" Type="Double" />
+    <Property Name="PrivateOut" Type="Double" />
+    <Property Name="TotOut" Type="Double" />
+    <Property Name="PrivateEmp" Type="Double" />
+    <Property Name="PrivateGDP" Type="Double" />
+    <Property Name="PrivateInc" Type="Double" />
+    <Property Name="TotEmp" Type="Double" />
+    <Property Name="TotInc" Type="Double" />
+    <Property Name="TotGDP" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="tblTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Income" Type="Double" />
+    <Property Name="Employment" Type="Double" />
+    <Property Name="GDP" Type="Double" />
+    <Property Name="Output" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="TempPC">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="VectorAA">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="VectorAADistribution">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="RIO" Type="Int32" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="z_AlabamaRest_AMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VALUE" Type="Double" />
+    <Property Name="SSMA_TimeStamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ZNewIoCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IO_KEY" Type="Int32" />
+    <Property Name="IO_DESC" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="PC_KEY" Type="Int32" />
+    <Property Name="PC_KEY_FOUND" Type="Int32" />
+    <Property Name="SIC" Type="Int32" />
+  </EntityType>
+  <EntityType Name="New_Stores_and_Restaurant">
+    <Key>
+      <PropertyRef Name="SSMA_TimeStamp" />
+    </Key>
+    <Property Type="Int32" Name="PC_KEY" />
+    <Property Type="Double" Name="VALUE" />
+    <Property Type="Binary" Name="SSMA_TimeStamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="emailid" />
+      <PropertyRef Name="RecordiD" />
+    </Key>
+    <Property Type="String" Name="username" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="emailid" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="region" />
+    <Property Type="Double" Name="report" />
+    <Property Type="String" Name="country" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="tab1" />
+    <Property Type="Boolean" Name="tab2" />
+    <Property Type="Boolean" Name="tab3" />
+    <Property Type="Boolean" Name="tab4" />
+    <Property Type="Double" Name="MainCR" />
+    <Property Type="Double" Name="MainCNC" />
+    <Property Type="Double" Name="CJV" />
+    <Property Type="Double" Name="MainJNCB" />
+    <Property Type="Double" Name="HMS" />
+    <Property Type="Double" Name="tcs" />
+    <Property Type="Double" Name="vc" />
+    <Property Type="Boolean" Name="three1" />
+    <Property Type="Double" Name="three2" />
+    <Property Type="Double" Name="three3" />
+    <Property Type="Boolean" Name="three4" />
+    <Property Type="Double" Name="three5" />
+    <Property Type="Double" Name="three6" />
+    <Property Type="Double" Name="three7" />
+    <Property Type="Double" Name="three8" />
+    <Property Type="Double" Name="three9" />
+    <Property Type="Double" Name="three10" />
+    <Property Type="Double" Name="three11" />
+    <Property Type="Boolean" Name="rmaina" />
+    <Property Type="Boolean" Name="rmainb" />
+    <Property Type="Boolean" Name="rmainc" />
+    <Property Type="Boolean" Name="rmaind" />
+    <Property Type="Double" Name="r1a" />
+    <Property Type="Double" Name="r2a" />
+    <Property Type="Double" Name="r3a" />
+    <Property Type="Double" Name="r4a" />
+    <Property Type="Double" Name="r5a" />
+    <Property Type="Double" Name="r6a" />
+    <Property Type="Double" Name="r7a" />
+    <Property Type="Double" Name="r8a" />
+    <Property Type="Double" Name="r9a" />
+    <Property Type="Double" Name="r10a" />
+    <Property Type="Double" Name="r11a" />
+    <Property Type="Double" Name="r12a" />
+    <Property Type="Double" Name="r13a" />
+    <Property Type="Double" Name="r14a" />
+    <Property Type="Double" Name="r15a" />
+    <Property Type="Double" Name="r16a" />
+    <Property Type="Double" Name="r17a" />
+    <Property Type="Double" Name="r18a" />
+    <Property Type="Double" Name="r19a" />
+    <Property Type="Double" Name="r20a" />
+    <Property Type="Double" Name="r21a" />
+    <Property Type="Double" Name="r22a" />
+    <Property Type="Double" Name="r23a" />
+    <Property Type="Double" Name="r24a" />
+    <Property Type="Double" Name="r25a" />
+    <Property Type="Double" Name="r26a" />
+    <Property Type="Double" Name="r27a" />
+    <Property Type="Double" Name="r28a" />
+    <Property Type="Double" Name="r29a" />
+    <Property Type="Double" Name="r30a" />
+    <Property Type="Double" Name="r31a" />
+    <Property Type="Double" Name="r32a" />
+    <Property Type="Double" Name="r33a" />
+    <Property Type="Double" Name="r34a" />
+    <Property Type="Double" Name="r35a" />
+    <Property Type="Double" Name="r36a" />
+    <Property Type="Double" Name="r37a" />
+    <Property Type="Double" Name="r38a" />
+    <Property Type="Double" Name="r39a" />
+    <Property Type="Double" Name="r40a" />
+    <Property Type="Double" Name="r1b" />
+    <Property Type="Double" Name="r2b" />
+    <Property Type="Double" Name="r3b" />
+    <Property Type="Double" Name="r4b" />
+    <Property Type="Double" Name="r5b" />
+    <Property Type="Double" Name="r6b" />
+    <Property Type="Double" Name="r7b" />
+    <Property Type="Double" Name="r8b" />
+    <Property Type="Double" Name="r9b" />
+    <Property Type="Double" Name="r10b" />
+    <Property Type="Double" Name="r11b" />
+    <Property Type="Double" Name="r12b" />
+    <Property Type="Double" Name="r13b" />
+    <Property Type="Double" Name="r14b" />
+    <Property Type="Double" Name="r15b" />
+    <Property Type="Double" Name="r16b" />
+    <Property Type="Double" Name="r17b" />
+    <Property Type="Double" Name="r18b" />
+    <Property Type="Double" Name="r19b" />
+    <Property Type="Double" Name="r20b" />
+    <Property Type="Double" Name="r21b" />
+    <Property Type="Double" Name="r22b" />
+    <Property Type="Double" Name="r23b" />
+    <Property Type="Double" Name="r24b" />
+    <Property Type="Double" Name="r25b" />
+    <Property Type="Double" Name="r26b" />
+    <Property Type="Double" Name="r27b" />
+    <Property Type="Double" Name="r28b" />
+    <Property Type="Double" Name="r29b" />
+    <Property Type="Double" Name="r30b" />
+    <Property Type="Double" Name="r31b" />
+    <Property Type="Double" Name="r32b" />
+    <Property Type="Double" Name="r33b" />
+    <Property Type="Double" Name="r34b" />
+    <Property Type="Double" Name="r35b" />
+    <Property Type="Double" Name="r36b" />
+    <Property Type="Double" Name="r37b" />
+    <Property Type="Double" Name="r38b" />
+    <Property Type="Double" Name="r39b" />
+    <Property Type="Double" Name="r40b" />
+    <Property Type="Double" Name="r1c" />
+    <Property Type="Double" Name="r2c" />
+    <Property Type="Double" Name="r3c" />
+    <Property Type="Double" Name="r4c" />
+    <Property Type="Double" Name="r5c" />
+    <Property Type="Double" Name="r6c" />
+    <Property Type="Double" Name="r7c" />
+    <Property Type="Double" Name="r8c" />
+    <Property Type="Double" Name="r9c" />
+    <Property Type="Double" Name="r10c" />
+    <Property Type="Double" Name="r11c" />
+    <Property Type="Double" Name="r12c" />
+    <Property Type="Double" Name="r13c" />
+    <Property Type="Double" Name="r14c" />
+    <Property Type="Double" Name="r15c" />
+    <Property Type="Double" Name="r16c" />
+    <Property Type="Double" Name="r17c" />
+    <Property Type="Double" Name="r18c" />
+    <Property Type="Double" Name="r19c" />
+    <Property Type="Double" Name="r20c" />
+    <Property Type="Double" Name="r21c" />
+    <Property Type="Double" Name="r22c" />
+    <Property Type="Double" Name="r23c" />
+    <Property Type="Double" Name="r24c" />
+    <Property Type="Double" Name="r25c" />
+    <Property Type="Double" Name="r26c" />
+    <Property Type="Double" Name="r27c" />
+    <Property Type="Double" Name="r28c" />
+    <Property Type="Double" Name="r29c" />
+    <Property Type="Double" Name="r30c" />
+    <Property Type="Double" Name="r31c" />
+    <Property Type="Double" Name="r32c" />
+    <Property Type="Double" Name="r33c" />
+    <Property Type="Double" Name="r34c" />
+    <Property Type="Double" Name="r35c" />
+    <Property Type="Double" Name="r36c" />
+    <Property Type="Double" Name="r37c" />
+    <Property Type="Double" Name="r38c" />
+    <Property Type="Double" Name="r39c" />
+    <Property Type="Double" Name="r40c" />
+    <Property Type="Double" Name="r1d" />
+    <Property Type="Double" Name="r2d" />
+    <Property Type="Double" Name="r3d" />
+    <Property Type="Double" Name="r4d" />
+    <Property Type="Double" Name="r5d" />
+    <Property Type="Double" Name="r6d" />
+    <Property Type="Double" Name="r7d" />
+    <Property Type="Double" Name="r8d" />
+    <Property Type="Double" Name="r9d" />
+    <Property Type="Double" Name="r10d" />
+    <Property Type="Double" Name="r11d" />
+    <Property Type="Double" Name="r12d" />
+    <Property Type="Double" Name="r13d" />
+    <Property Type="Double" Name="r14d" />
+    <Property Type="Double" Name="r15d" />
+    <Property Type="Double" Name="r16d" />
+    <Property Type="Double" Name="r17d" />
+    <Property Type="Double" Name="r18d" />
+    <Property Type="Double" Name="r19d" />
+    <Property Type="Double" Name="r20d" />
+    <Property Type="Double" Name="r21d" />
+    <Property Type="Double" Name="r22d" />
+    <Property Type="Double" Name="r23d" />
+    <Property Type="Double" Name="r24d" />
+    <Property Type="Double" Name="r25d" />
+    <Property Type="Double" Name="r26d" />
+    <Property Type="Double" Name="r27d" />
+    <Property Type="Double" Name="r28d" />
+    <Property Type="Double" Name="r29d" />
+    <Property Type="Double" Name="r30d" />
+    <Property Type="Double" Name="r31d" />
+    <Property Type="Double" Name="r32d" />
+    <Property Type="Double" Name="r33d" />
+    <Property Type="Double" Name="r34d" />
+    <Property Type="Double" Name="r35d" />
+    <Property Type="Double" Name="r36d" />
+    <Property Type="Double" Name="r37d" />
+    <Property Type="Double" Name="r38d" />
+    <Property Type="Double" Name="r39d" />
+    <Property Type="Double" Name="r40d" />
+    <Property Type="String" Name="additioanl1" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="additioanl2" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="additioanl3" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="additioanl4" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="datetime" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="user" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RecordiD" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>
